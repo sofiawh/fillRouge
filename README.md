@@ -1,138 +1,52 @@
 # fillRouge
-Nom du Projet : "EcoLife - Application de Suivi Écologique" Description détaillée :
 
-Fonctionnalités clés:
-Inscription et Profils Utilisateurs : 
+# Projet: "FoodHero - Application de Lutte contre le Gaspillage Alimentaire" 
 
-Les utilisateurs s'inscrivent en fournissant des informations telles que leur nom, adresse e-mail et emplacement géographique. Ils détaillent également leurs habitudes de vie actuelles, leurs objectifs de durabilité, et leurs préférences environnementales. Les profils utilisateurs comprennent des sections dédiées aux habitudes quotidiennes, aux réalisations écologiques, aux défis en cours, et aux projets de durabilité personnels. 
+Description du Projet : 
 
-Suivi d'Actions Écologiques :
+Développez une application de lutte contre le gaspillage alimentaire qui connecte les utilisateurs, les commerçants et les associations caritatives. Le backend sera construit en Java (Spring), et le frontend en Angular. L'objectif de cette application est de réduire le gaspillage alimentaire en permettant aux commerçants de partager les excédents alimentaires avec les utilisateurs et les associations caritatives.
 
-Les utilisateurs enregistrent leurs actions écologiques quotidiennes à l'aide d'une interface intuitive. Cela peut inclure des actions telles que le recyclage, la consommation de produits locaux, et la réduction de la consommation d'énergie. Chaque action enregistrée génère automatiquement des points écologiques, et des notifications sont envoyées pour féliciter l'utilisateur et lui donner des suggestions pour des actions similaires. 
+Fonctionnalités Principales :
 
-Tableau de Bord Écologique : 
-
-Un tableau de bord interactif permet aux utilisateurs de visualiser l'impact cumulé de leurs actions écologiques au fil du temps. Des graphiques et des statistiques présentent des informations sur la réduction des émissions de carbone, la préservation des ressources, et d'autres mesures de durabilité. Des notifications régulières informent les utilisateurs des nouveaux graphiques ajoutés au tableau de bord, des jalons atteints, et des conseils pour maximiser leur impact écologique. 
-
-Communauté Écologique : 
-
-Une section communautaire encourage les utilisateurs à partager leurs succès, à proposer des défis écologiques, et à collaborer sur des projets de durabilité. Des notifications sont générées pour les nouveaux défis proposés, les discussions populaires au sein de la communauté, et les événements écologiques locaux. 
-
-Notifications Personnalisées :
-
-Le système de notification envoie des messages personnalisés en fonction du profil de chaque utilisateur. Par exemple, un utilisateur engagé dans la réduction des déchets pourrait recevoir des suggestions spécifiques à ce domaine. Les notifications sont également utilisées pour rappeler aux utilisateurs des défis en cours, des événements locaux à venir, et des opportunités de collaboration. 
-
-Technologies : 
-
-Backend : Java avec Spring (Spring Boot), Spring Security, WebSocket pour les notifications en temps réel. 
-Frontend : Angular avec une interface utilisateur réactive et des graphiques interactifs pour le suivi des actions écologiques. 
-Base de Données : PostgreSQL pour stocker les informations sur les utilisateurs, leurs actions écologiques et les discussions de la communauté.
+Le diagramme de Use Case:
 
 
-les classes sont:
-1. Classe Utilisateur :
-    - Attributs :
-      - idUtilisateur : int
-      - nom : String - email : String
-      - localisation : String
-      - pointsEcologiques : int
-      - objectifsDurabilite : List<String>
-    - Méthodes :
-      - enregistrerActionEcologique(action : ActionEcologique) : void
-      - rejoindreDefiEcologique(defi : DefiEcologique) : void
-      - ajouterProjet(personnel : ProjetEcologique) : void
-2. Classe ActionEcologique :
-    - Attributs :
-      - idAction : int
-      - typeAction : String
-      - pointsGagnes : int
-   - Méthodes :
-     - getDescription() : String
-3. Classe TableauDeBord :
-   - Attributs :
-     - actionsEnregistrees : List<ActionEcologique>
-     - statistiques : Statistiques
-   - Méthodes :
-     - ajouterAction(action : ActionEcologique) : void
-     - genererStatistiques() : void
-4. Classe DefiEcologique :
-   - Attributs :
-     - idDefi : int
-     - description : String
-     - participants : List<Utilisateur>
-   - Méthodes :
-     - ajouterParticipant(utilisateur : Utilisateur) : void
-     - notifierParticipants(message : String) : void
-5. Classe ProjetEcologique :
-   - Attributs :
-     - idProjet : int
-     - description : String
-     - participants : List<Utilisateur>
-   - Méthodes :
-     - ajouterParticipant(utilisateur : Utilisateur) : void
-     - partagerProgression() : void
- 6. Classe Statistiques :
-    - Attributs :
-      - emissionCarboneReduite : double
-      - ressourcesPreservees : double
-    - Méthodes :
-      - calculerEmissionCarboneReduite() : double
-      - calculerRessourcesPreservees() : double
-
-        
-![Capture d'écran 2024-02-17 172110](https://github.com/sofiawh/fillRouge/assets/26141915/b15094ec-a8e1-40b2-b3f3-19d347740a07)
-
-Diagramme de USE CASE:
+![usecaseGaspillage](https://github.com/sofiawh/fillRouge/assets/26141915/8398cbd6-8641-4339-8c60-054a976df208)
 
 
-![USECASE](https://github.com/sofiawh/fillRouge/assets/26141915/ce9547ea-9992-4694-b421-a3c7b5f22d52)
+
+1- Authentification et Profils Utilisateurs : 
+     * Mise en place d'un système d'authentification sécurisé.
+     * Les utilisateurs peuvent créer des profils, spécifier leurs préférences alimentaires et suivre les commerçants partenaires. 
+
+2- Cartographie des Commerçants Partenaires : 
+    * Intégration d'une carte permettant aux utilisateurs de localiser les commerçants participants à l'initiative anti-gaspillage alimentaire.
+
+3- Annonces d'Excédents Alimentaires : 
+    * Les commerçants peuvent publier des annonces pour partager leurs excédents alimentaires avec les utilisateurs et les associations caritatives. 
+
+4- Système de Notifications : 
+    * Ajoutez des notifications pour informer les utilisateurs des offres spéciales sur les excédents alimentaires, des nouvelles annonces, etc. 
+
+5- Donations aux Associations Caritatives : 
+    * Les utilisateurs peuvent choisir de faire des dons monétaires ou en nature aux associations caritatives partenaires. 
+
+6- Système de Notation et de Commentaires :
+    * Mettez en place un système de notation et de commentaires pour évaluer la qualité des produits partagés par les commerçants. 
+
+7- Tableau de Bord des Statistiques : 
+    * Intégrez un tableau de bord où les commerçants et les utilisateurs peuvent suivre l'impact positif de leurs contributions à la lutte contre le gaspillage alimentaire. 
+
+8- Enquêtes de Satisfaction : 
+    * Intégrez des enquêtes de satisfaction pour recueillir les retours des utilisateurs et des commerçants, afin d'améliorer constamment l'application. 
+
+Ce projet vise à sensibiliser et à mobiliser la communauté pour réduire le gaspillage alimentaire.
+
+Le diagramme de Classes:
+
+![classesDiagram](https://github.com/sofiawh/fillRouge/assets/26141915/cf8e549e-4749-4340-aed4-6d3008fc9f1b)
 
 
-Acteur Principal : Utilisateur
+    
+Ensemble, cette application crée une communauté engagée dans la réduction du gaspillage alimentaire, encourageant la solidarité et l'impact positif sur l'environnement et la société.
 
-Cas d'utilisation 1 : S'inscrire
-   - Le nouvel utilisateur fournit ses informations pour créer un compte.
-   - Le système enregistre les informations et crée un profil utilisateur.
-   - Le système envoie une notification de bienvenue à l'utilisateur.
-
-Cas d'utilisation 2 : Enregistrer Action Écologique
-   - L'utilisateur enregistre une action écologique (recyclage, utilisation de transports écologiques, etc.).
-   - Le système attribue des points écologiques à l'utilisateur en fonction de l'action.
-   - Le système met à jour le tableau de bord de l'utilisateur.
-   - Le système envoie une notification de confirmation à l'utilisateur.
-
-Cas d'utilisation 3 : Rejoindre Défi Écologique
-   - L'utilisateur explore les défis écologiques disponibles.
-   - L'utilisateur choisit un défi et le rejoint.
-   - Le système ajoute l'utilisateur à la liste des participants du défi.
-   - Le système envoie une notification de confirmation à l'utilisateur.
-
-Cas d'utilisation 4 : Consulter Tableau de Bord
-   - L'utilisateur accède à son tableau de bord pour voir ses actions enregistrées et statistiques.
-   - Le système affiche le tableau de bord avec les informations mises à jour.
-
-Cas d'utilisation 5 : Proposer Projet Écologique
-   - L'utilisateur propose un projet écologique collaboratif.
-   - Le système enregistre les détails du projet et notifie la communauté des utilisateurs.
-   - Les autres utilisateurs peuvent rejoindre le projet.
-
-Cas d'utilisation 6 : Interagir dans la Communauté
-   - L'utilisateur participe aux discussions de la communauté.
-   - L'utilisateur peut proposer des défis écologiques, partager des astuces, et collaborer sur des projets.
-   - Le système envoie des notifications pour les nouvelles discussions pertinentes.
-
-Cas d'utilisation 7 : Consulter Statistiques Globales
-   - L'utilisateur peut consulter les statistiques globales de la communauté, y compris les émissions de carbone réduites et les ressources préservées.
-   - Le système affiche les statistiques globales mises à jour.
-
-Cas d'utilisation 8 : Recevoir Notifications Personnalisées
-   - Le système envoie des notifications personnalisées en fonction des préférences et du comportement de l'utilisateur.
-   - Les notifications peuvent inclure des suggestions d'actions écologiques, des défis, et des actualités de la communauté.
-
-Cas d'utilisation 9 : Modifier Profil
-   - L'utilisateur peut modifier les informations de son profil, y compris ses objectifs de durabilité et ses préférences.
-   - Le système enregistre les modifications et met à jour le profil de l'utilisateur.
-   - Le système envoie une notification de confirmation à l'utilisateur.
-
-
-        
