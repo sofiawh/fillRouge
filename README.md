@@ -78,3 +78,8 @@ les classes sont:
     - Méthodes :
       - calculerEmissionCarboneReduite() : double
       - calculerRessourcesPreservees() : double
+
+        
+![Capture d'écran 2024-02-17 172110](https://github.com/sofiawh/fillRouge/assets/26141915/b15094ec-a8e1-40b2-b3f3-19d347740a07)
+
+        
