@@ -27,3 +27,54 @@ Technologies :
 Backend : Java avec Spring (Spring Boot), Spring Security, WebSocket pour les notifications en temps réel. 
 Frontend : Angular avec une interface utilisateur réactive et des graphiques interactifs pour le suivi des actions écologiques. 
 Base de Données : PostgreSQL pour stocker les informations sur les utilisateurs, leurs actions écologiques et les discussions de la communauté.
+
+
+les classes sont:
+1. Classe Utilisateur :
+    - Attributs :
+      - idUtilisateur : int
+      - nom : String - email : String
+      - localisation : String
+      - pointsEcologiques : int
+      - objectifsDurabilite : List<String>
+    - Méthodes :
+      - enregistrerActionEcologique(action : ActionEcologique) : void
+      - rejoindreDefiEcologique(defi : DefiEcologique) : void
+      - ajouterProjet(personnel : ProjetEcologique) : void
+2. Classe ActionEcologique :
+    - Attributs :
+      - idAction : int
+      - typeAction : String
+      - pointsGagnes : int
+   - Méthodes :
+     - getDescription() : String
+3. Classe TableauDeBord :
+   - Attributs :
+     - actionsEnregistrees : List<ActionEcologique>
+     - statistiques : Statistiques
+   - Méthodes :
+     - ajouterAction(action : ActionEcologique) : void
+     - genererStatistiques() : void
+4. Classe DefiEcologique :
+   - Attributs :
+     - idDefi : int
+     - description : String
+     - participants : List<Utilisateur>
+   - Méthodes :
+     - ajouterParticipant(utilisateur : Utilisateur) : void
+     - notifierParticipants(message : String) : void
+5. Classe ProjetEcologique :
+   - Attributs :
+     - idProjet : int
+     - description : String
+     - participants : List<Utilisateur>
+   - Méthodes :
+     - ajouterParticipant(utilisateur : Utilisateur) : void
+     - partagerProgression() : void
+ 6. Classe Statistiques :
+    - Attributs :
+      - emissionCarboneReduite : double
+      - ressourcesPreservees : double
+    - Méthodes :
+      - calculerEmissionCarboneReduite() : double
+      - calculerRessourcesPreservees() : double
