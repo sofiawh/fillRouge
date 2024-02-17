@@ -82,4 +82,57 @@ les classes sont:
         
 ![Capture d'écran 2024-02-17 172110](https://github.com/sofiawh/fillRouge/assets/26141915/b15094ec-a8e1-40b2-b3f3-19d347740a07)
 
+Diagramme de USE CASE:
+
+
+![USECASE](https://github.com/sofiawh/fillRouge/assets/26141915/ce9547ea-9992-4694-b421-a3c7b5f22d52)
+
+
+Acteur Principal : Utilisateur
+
+Cas d'utilisation 1 : S'inscrire
+   - Le nouvel utilisateur fournit ses informations pour créer un compte.
+   - Le système enregistre les informations et crée un profil utilisateur.
+   - Le système envoie une notification de bienvenue à l'utilisateur.
+
+Cas d'utilisation 2 : Enregistrer Action Écologique
+   - L'utilisateur enregistre une action écologique (recyclage, utilisation de transports écologiques, etc.).
+   - Le système attribue des points écologiques à l'utilisateur en fonction de l'action.
+   - Le système met à jour le tableau de bord de l'utilisateur.
+   - Le système envoie une notification de confirmation à l'utilisateur.
+
+Cas d'utilisation 3 : Rejoindre Défi Écologique
+   - L'utilisateur explore les défis écologiques disponibles.
+   - L'utilisateur choisit un défi et le rejoint.
+   - Le système ajoute l'utilisateur à la liste des participants du défi.
+   - Le système envoie une notification de confirmation à l'utilisateur.
+
+Cas d'utilisation 4 : Consulter Tableau de Bord
+   - L'utilisateur accède à son tableau de bord pour voir ses actions enregistrées et statistiques.
+   - Le système affiche le tableau de bord avec les informations mises à jour.
+
+Cas d'utilisation 5 : Proposer Projet Écologique
+   - L'utilisateur propose un projet écologique collaboratif.
+   - Le système enregistre les détails du projet et notifie la communauté des utilisateurs.
+   - Les autres utilisateurs peuvent rejoindre le projet.
+
+Cas d'utilisation 6 : Interagir dans la Communauté
+   - L'utilisateur participe aux discussions de la communauté.
+   - L'utilisateur peut proposer des défis écologiques, partager des astuces, et collaborer sur des projets.
+   - Le système envoie des notifications pour les nouvelles discussions pertinentes.
+
+Cas d'utilisation 7 : Consulter Statistiques Globales
+   - L'utilisateur peut consulter les statistiques globales de la communauté, y compris les émissions de carbone réduites et les ressources préservées.
+   - Le système affiche les statistiques globales mises à jour.
+
+Cas d'utilisation 8 : Recevoir Notifications Personnalisées
+   - Le système envoie des notifications personnalisées en fonction des préférences et du comportement de l'utilisateur.
+   - Les notifications peuvent inclure des suggestions d'actions écologiques, des défis, et des actualités de la communauté.
+
+Cas d'utilisation 9 : Modifier Profil
+   - L'utilisateur peut modifier les informations de son profil, y compris ses objectifs de durabilité et ses préférences.
+   - Le système enregistre les modifications et met à jour le profil de l'utilisateur.
+   - Le système envoie une notification de confirmation à l'utilisateur.
+
+
         
